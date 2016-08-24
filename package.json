@@ -4,8 +4,9 @@
     "description": "Keep unique lines of text and remove duplicates from current selection. Also includes a command to shuffle currently selected lines.",
     "version": "1.0.0",
     "publisher": "vsce",
+    "icon": "images/logo_128.png",
     "bugs": {
-        "url": "https://github.com/iambibhas/vscode-git-easy/issues",
+        "url": "https://github.com/iambibhas/vscode-unique-lines/issues",
         "email": "me@bibhas.in"
     },
     "engines": {
