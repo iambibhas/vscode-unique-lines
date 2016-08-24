@@ -1,0 +1,37 @@
+{
+    "name": "unique-lines",
+    "displayName": "Unique Lines",
+    "description": "Keep unique lines of text and remove duplicates from current selection. Also includes a command to shuffle currently selected lines.",
+    "version": "1.0.0",
+    "publisher": "vsce",
+    "bugs": {
+        "url": "https://github.com/iambibhas/vscode-git-easy/issues",
+        "email": "me@bibhas.in"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:unique-lines.keepUnique",
+        "onCommand:unique-lines.shuffle"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "unique-lines.keepUnique",
+            "title": "Unique Lines - Keep unique lines from selection"
+        }, {
+            "command": "unique-lines.shuffle",
+            "title": "Unique Lines - Shuffle/Randomize the order of selected lines"
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^0.11.0"
+    }
+}
